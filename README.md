@@ -9,4 +9,3 @@ Trigonometric shape sensing implementation:
 
 ROS2 integration:
 - By Dimitri: https://github.com/dlezcan1/ros2_needle_insertion_experiment
-- By Alan (robot only): https://github.com/jfcoeur/Needle-projects-documentation/blob/main/NeedlePenetrationRobot%20Startup%20Procedure.pdf
