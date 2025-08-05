@@ -1,0 +1,11 @@
+By Yujie Zhang
+
+The workspace is ros2_ws:
+
+1.source install/setup.bash
+2.ros2 launch multiple_camera_driver.py
+3.rqt_image_view(using this command can let you see the video of the stereo camera)
+4.ros2 topic list | grep camera(this command is to let you doublecheck if the camera node is working)
+5.If you want to use the ros2 calibration package, use this command:
+ros2 run camera_calibration cameracalibrator --size 10x7 --square 0.02 right:=/cam_0/image_raw left:/cam_1/image_raw right_camera:/=cam_0/camera_info left_camera:=/cam_1/camera_info
+Then you can flip the checkerboard until the x,y,size,skew lines become green
