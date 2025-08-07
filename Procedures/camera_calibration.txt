@@ -1,4 +1,4 @@
-By Yujie Zhang, JF
+JF
 
 1. cd ~/camera_ros2_ws
 2. source install/setup.bash
