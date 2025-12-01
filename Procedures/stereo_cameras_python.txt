@@ -1,1 +1,22 @@
-
+1. Open Command Prompt
+2. python -m venv venv
+3. venv\Scripts\activate
+4. If not already installed: pip install opencv-contrib-python numpy matplotlib scipy scikit-image scikit-learn geomdl
+5. If not already downloaded: git clone <repository-url>
+6. cd C:\Users\jfcoe\OneDrive - Johns Hopkins\Documents\GitHub\Stereo Cameras\Python
+7. Organize the stereo images:
+  my_experiment/
+    Insertion1/
+      0/
+        left.png        # reference left image (no needle)
+        right.png       # reference right image
+      105/
+        left.png        # sample images with needle inserted
+        right.png
+      110/
+        ...
+    Insertion2/
+      ...
+8. Adjust the segmentation ROI in needle_segmentation_functions.py: python needle_segmentation_script.py path/to/your/image.png
+9. Review the available command-line options: python needle_reconstruction.py --help
+10. python needle_reconstruction.py --save --force-overwrite --segmentation-bspline-order 2 --stereomatch-bspline-order 2 --left-contrast-enhance 1.0 0 --right-contrast-enhance 1.0 0 --zoom 2.5 --window-size 201 51 --alpha 0.6 --subtract-thresh 60 "C:\Users\jfcoe\OneDrive - Johns Hopkins\Documents\GitHub\Stereo Cameras\Files\Calibration\stereoParams_opencv-struct.mat" "D:\FBGS experimental data\11_26_25-Real-time test\Ground truths"
