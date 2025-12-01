@@ -2,7 +2,7 @@
 2. python -m venv venv
 3. venv\Scripts\activate
 4. If not already installed: pip install opencv-contrib-python numpy matplotlib scipy scikit-image scikit-learn geomdl
-5. If not already downloaded: git clone <repository-url>
+5. If not already downloaded: git clone https://github.com/jfcoeur/Stereo-Cameras.git
 6. cd C:\Users\jfcoe\OneDrive - Johns Hopkins\Documents\GitHub\Stereo Cameras\Python
 7. Organize the stereo images:
   my_experiment/
